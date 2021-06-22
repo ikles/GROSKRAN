@@ -75,7 +75,15 @@ jQuery(document).ready(function( $ ) {
       asNavFor: '.slider-for',
       dots: true,
       centerMode: false,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+      ]
     });
   }
 
@@ -101,7 +109,7 @@ jQuery(document).ready(function( $ ) {
     });
   }
 
-if ($('.customers-slider').length) {
+  if ($('.customers-slider').length) {
     $('.customers-slider').slick({            
       infinite: true,
       slidesToShow: 4,
@@ -115,9 +123,15 @@ if ($('.customers-slider').length) {
       
       responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 4,          
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
         }
       }
       ]
@@ -130,20 +144,20 @@ if ($('.customers-slider').length) {
     let wrapp = $(this).find('.rews-info');
     let imgg = $(this).find('.rews-img-w').clone();
     //console.log(imgg);
-    wrapp.append(imgg);
+    wrapp.append(imgg.addClass('two'));
   });
 
 
 
 
 
-$(".top-mnu, .top-w").click(function (e) {
-  e.stopPropagation();
-});
+  $(".top-mnu, .top-w").click(function (e) {
+    e.stopPropagation();
+  });
 
 
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -154,6 +168,12 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
+});*/
+
+
+$('.products-form-tit-more').click(function () {
+  $(this).toggleClass('on');
+  $('.products-form').toggleClass('on');
 });
 
 
@@ -189,6 +209,27 @@ $('.top-mnu-li._parent a').click(function (e) {
   $(this).toggleClass('on');
   $(this).next().toggleClass('on');
 });
+
+
+$(window).scroll(function () {
+        // Если отступ сверху больше 50px то показываем кнопку "Наверх"
+        if ($(this).scrollTop() > 550) {
+          $('#button-up').fadeIn();
+        } else {
+          $('#button-up').fadeOut();
+        }
+      });
+
+/** При нажатии на кнопку мы перемещаемся к началу страницы */
+$('#button-up').click(function () {
+  $('body,html').animate({
+    scrollTop: 0
+  }, 500);
+  return false;
+});
+
+
+
 
 
 }); //ready
