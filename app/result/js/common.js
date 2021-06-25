@@ -230,6 +230,8 @@ $('#button-up').click(function () {
 
 
 
-
+$('select').select2({
+  minimumResultsForSearch: -1
+});
 
 }); //ready
