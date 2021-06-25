@@ -229,9 +229,11 @@ $('#button-up').click(function () {
 });
 
 
-
+if ($('select').length) {
 $('select').select2({
   minimumResultsForSearch: -1
-});
+});  
+}
+
 
 }); //ready
