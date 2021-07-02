@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <title>Карточка</title>
+  <link rel="stylesheet" href="css/slick.css">    
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/main.css">
+	  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper wrapper-card">
+    
+     <div class="top">
+        <div class="contain">
+          <div class="top-w">
+
+            <div class="col-mnu">
+              <div class="hidden-mnu">
+                <a href="#" class="toggle-mnu"><span></span></a>
+              </div>
+              <ul class="top-mnu">
+                <li class="top-mnu-li _parent">
+                  <a href="" class="top-mnu-li-a active">Спецтехника</a>
+                  <ul class="top-child-mnu">
+                    <li><a href="" class="active" href="">Автокраны</a></li>
+                    <li><a href="">Гусеничный краны</a></li>
+                    <li><a href="">Тралы</a></li>
+                    <li><a href="">Экскаваторы</a></li>
+                    <li><a href="">Самосвалы</a></li>
+                    <li><a href="">Манипуляторы</a></li>
+                  </ul>
+                </li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Цены</a></li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Наши работы</a></li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Услуги</a></li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Статьи</a></li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Новости</a></li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Отзывы</a></li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">О компании</a></li>
+                <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Контакты</a></li>
+              </ul>
+            </div>
+
+            <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+            <div class="top-conts-b">
+              <a class="mob-cont-link" href="tel:+74955052029"><img src="img/phone.svg" /></a>
+              <div class="top-conts-txts">
+                <div class="top-conts-txt-1">Телефон (круглосуточно)</div>
+                <a href="tel:+74955052029" class="top-conts-txt-2 top-conts-phone">+ 7 (495) 505-20-29</a>
+              </div>
+            </div>
+            <div class="top-conts-b">
+              <a class="mob-cont-link" href="mailto:info@groskran.ru"><img src="img/mail.svg" /></a>
+              <div class="top-conts-txts">
+                <div class="top-conts-txt-1">E-mail</div>
+                <a href="mailto:info@groskran.ru" class="top-conts-txt-2">info@groskran.ru</a>
+              </div>
+            </div>
+            <div class="top-conts-b">            
+              <a class="mob-cont-link" href=""><img src="img/inst.svg" /></a>
+              <div class="top-conts-txts">
+                <div class="top-conts-txt-1">Следуйте за нами в</div>
+                <a href="" class="top-conts-txt-2">Instagram</a>
+              </div>
+            </div>
+            <a href="" class="top-btn btn"><img src="img/callback.svg" class="top-btn-icon" /><span class="top-btn-span">Обратный звонок</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="top-2">
+        <div class="contain">
+          <div class="top-2-w">
+            <ul class="top-mnu-1">
+              <li class="top-mnu-li _parent">
+                <a href="" class="top-mnu-li-a active">Спецтехника</a>
+                <ul class="top-child-mnu">
+                  <li><a href="" class="active" href="">Автокраны</a></li>
+                  <li><a href="">Гусеничный краны</a></li>
+                  <li><a href="">Тралы</a></li>
+                  <li><a href="">Экскаваторы</a></li>
+                  <li><a href="">Самосвалы</a></li>
+                  <li><a href="">Манипуляторы</a></li>
+                </ul>
+              </li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Цены</a></li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Наши работы</a></li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Услуги</a></li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Статьи</a></li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Новости</a></li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Отзывы</a></li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">О компании</a></li>
+              <li class="top-mnu-li"><a href="" class="top-mnu-li-a">Контакты</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    <div class="top-banner">
+      <div class="top-slide">
+        <img src="img/top-banner-1.jpg" class="slide-img" />
+        <div class="slide-cont">
+          <div class="contain">
+            <div class="slide-txts">
+              <div class="slide-txt-1 slide-txt-1-red-dot">                
+                <span class="slide-txt-span">Аренда автокрана</span> <br>
+                400 тонн Liebherr LTM 1400
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-mnu-b">
+      <div class="contain">
+        <div class="prod-mnu-w">
+          <ul class="prod-mnu">
+            <li class="prod-mnu-li"><a href="" class="prod-mnu-a active">Автокраны</a></li>
+            <li class="prod-mnu-li"><a href="" class="prod-mnu-a">Гусеничные краны</a></li>
+            <li class="prod-mnu-li"><a href="" class="prod-mnu-a">Тралы</a></li>
+            <li class="prod-mnu-li"><a href="" class="prod-mnu-a">Экскаваторы</a></li>
+            <li class="prod-mnu-li"><a href="" class="prod-mnu-a">Самосвалы</a></li>
+            <li class="prod-mnu-li"><a href="" class="prod-mnu-a">Манипуляторы</a></li>              
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-page">
+      <div class="contain">
+        <div class="bread-w">
+          <ul>          
+            <li><a href="#" class="active" href="">Главная</a></li>
+            <li><a href="">Аренда автокрана 400 тонн Liebherr LTM 1400</a></li>
+          </ul>
+        </div>
+        
+        <div class="scard-w">
+          <div class="scard-l">
+            <div class="scard-gal">
+              <div class="scard-gal-big">
+                <img src="img/card-big.jpg" class="scard-big-img-w" />
+              </div>
+              <div class="scard-mins">
+                <a href="img/card-big.jpg" class="scard-min"><img src="img/card-big.jpg" class="scard-min-img" /></a>
+                <a href="img/card-min-2.jpg" class="scard-min"><img src="img/card-min-2.jpg" class="scard-min-img" /></a>
+                <a href="img/card-min-3.jpg" class="scard-min"><img src="img/card-min-3.jpg" class="scard-min-img" /></a>
+                <a href="img/card-min-4.jpg" class="scard-min"><img src="img/card-min-4.jpg" class="scard-min-img" /></a>
+                <a href="img/card-min-5.jpg" class="scard-min"><img src="img/card-min-5.jpg" class="scard-min-img" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="scard-r">
+            <div class="scard-ord">
+              <div class="scardord-row">
+                <div class="scardord-img-w"><img src="img/scardord-icon.svg" /></div>
+                <div class="scardord-txt">Оформить заказ можно <a href="#" class="scardord-a">по телефонам</a> или через онлайн-форму</div>
+              </div>
+              <div class="scardord-row-2">
+                <div class="scardord-price"><span class="scardord-price-span">240 000</span> руб./смена</div>
+                <a href="#" class="scardord-btn btn-w100">Арендовать</a>
+              </div>
+            </div>
+            <div class="scard-chars">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><div class="dots"><span> Макс. грузоподъемность </span></div></td>
+                    <td><strong>400 т.</strong></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dots"><span> Длина стрелы </span></div></td>
+                    <td><strong>60 м.</strong></td>
+                  </tr>
+                  <tr>
+                    <td><div class="dots"><span> Длина гуська </span></div></td>                      
+                    <td><strong>84 м.</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="" class="scard-chars-btn btn-o">Все характеристики<span class="all-servs-icon"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="scard-tabs">
+          <ul class="tabs-control">
+            <li class="tabs_control_item active">
+              <a href="#" class="tabs_control_link">Описание</a>
+            </li>
+
+            <li class="tabs_control_item">
+              <a href="#" class="tabs_control_link">Характеристики</a>
+            </li>
+            <li class="tabs_control_item">
+              <a href="#" class="tabs_control_link">Документы</a>
+            </li>
+            <li class="tabs_control_item">
+              <a href="#" class="tabs_control_link">Статьи по теме</a>
+            </li>
+          </ul>
+          <ul class="tabs_content">
+            <li class="tabs_content_item active">
+              <div class="scard-desc-desc">
+                <p>Автокраны Liebherr, рассчитанные на подъем груза до 400 тонн, отличаются великолепными техническими характеристиками, сделавшими эту технику невероятно популярной во всей Европе:</p>
+                <p>
+                  Высокая надежность всех электронных
+                  систем много- и малотонных автокранов делают их совершенно безопасными в любых условиях работ. <br> Простота управления краном позволяет крановщику быстро обучиться работе на нем, получить необходимые допуски и сертификаты и профессионально управляться с механизмами многотонника. <br>
+                  Прекрасные маневренные качества дают возможность использовать Liebherr LTM 1400 в таких условиях, в каких другой грузоподъемный механизм не сможет поднять груз на нужную высоту. Приличная для такого гиганта скорость – до 80 км/ч по асфальтированному шоссе – позволяют быстро перемещать многотонник между строительными объектами, повышая производительность работ и снижая срок их окончания. <br> Телескопически выдвигающаяся стрела снабжена механизмами, позволяющими максимально увеличить ее вылет на нужную для производства работ высоту. Максимальный вылет стрелы составляет около 60 метров, при этом его
+                  можно увеличить при помощи решетчатого удлинителя от 7 до 84 м. <br>
+                  Чтобы воспользоваться услугами такого автокрана, вам совершенно необязательно брать большие кредиты для его приобретения – аренда автокрана 400 тонн
+                  Liebherr LTM 1400 обойдется вам неизмеримо дешевле, а объем работ, которые такая техника может производить всего за одну смену работы, превосходит производительность любых башенных и малотонных кранов на автомобильном ходу.
+                </p>
+                <p>
+                  Вы можете арендовать кран как на несколько смен работы, так и на несколько часов – наши менеджеры рассмотрят любое ваше предложение. Способность быстро перемещаться между площадками делают Liebherr LTM 1400
+                  незаменимым агрегатом для крупных строительных подрядчиков, одновременно ведущих несколько объектов. Наши крановщики являются профессионалами своего дела, все работы по подъему груза выполняют быстро, качественно и с
+                  обеспечением максимальной безопасности для стропальщиков и рабочих.
+                </p>
+                <p>Мы выполняем любые виды грузоподъёмных работ, в таких условиях, куда башенный кран не имеет возможности дотянуться. Компактность размеров Liebherr LTM
+                1400 делает его совершенно необходимой техникой для работы в крупных городах, где на стройплощадках всегда мало места.</p>
+              </div>
+              <div class="scard-desc-gal">
+                <a data-fancybox="gallery-1" href="img/scard-desc-gal-it-1.jpg" class="scard-desc-gal-it"><span class="scard-desc-gal-plus"></span><img src="img/scard-desc-gal-it-1.jpg" /></a>
+                <a data-fancybox="gallery-1" href="img/scard-desc-gal-it-2.jpg" class="scard-desc-gal-it"><span class="scard-desc-gal-plus"></span><img src="img/scard-desc-gal-it-2.jpg" /></a>
+                <a data-fancybox="gallery-1" href="img/scard-desc-gal-it-3.jpg" class="scard-desc-gal-it"><span class="scard-desc-gal-plus"></span><img src="img/scard-desc-gal-it-3.jpg" /></a>
+                <a data-fancybox="gallery-1" href="img/scard-desc-gal-it-4.jpg" class="scard-desc-gal-it"><span class="scard-desc-gal-plus"></span><img src="img/scard-desc-gal-it-4.jpg" /></a>
+                <a data-fancybox="gallery-1" href="img/scard-desc-gal-it-5.jpg" class="scard-desc-gal-it"><span class="scard-desc-gal-plus"></span><img src="img/scard-desc-gal-it-5.jpg" /></a>
+                <a data-fancybox="gallery-1" href="img/scard-desc-gal-it-6.jpg" class="scard-desc-gal-it"><span class="scard-desc-gal-plus"></span><img src="img/scard-desc-gal-it-6.jpg" /></a>
+              </div>
+            </li>
+            <li class="tabs_content_item ">
+              <div class="scard-tabs-tables-w">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><div class="dots"><span>Макс. грузоподъемность</span></div></td>
+                      <td>400 тон при вылете 3 метра</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Длина телескопической стрелы</span></div></td>
+                      <td>от 15.4 до 60 метров</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Решетчатый удлинитель <br> основной стрелы</span></div></td>
+                      <td>от 7 до 84 метров</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Двигатель шасси</span></div></td>
+                      <td>Восьмицилиндровый двигатель <br> Liebherr с турбонагнетателем</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Мощность</span></div></td>
+                      <td>450 кВт</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Двигатель крановой <br> установки</span></div></td>
+                      <td>Четырёхцилиндровый двигатель <br> Liebherr с турбонагнетателем</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><div class="dots"><span>Мощность</span></div></td>
+                      <td>240 кВт</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Скорость езды</span></div></td>
+                      <td>80 км/ч</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Привод/рулевое управление</span></div></td>
+                      <td>14 х 8 х 14</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Вес в транспортном положении</span></div></td>
+                      <td>84 тонны</td>
+                    </tr>
+                    <tr>
+                      <td><div class="dots"><span>Суммарный вес противовеса</span></div></td>
+                      <td>140 тонн</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li class="tabs_content_item">
+              <div class="scard-download-w">
+                <a href="#" class="scard-download-it">
+                  <div class="scard-download-img-w"><img src="img/doc.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Скачать файл-документацию</span><span class="scard-download-txt-2">pdf, 1.4 Mb</span></div>
+                </a>
+                <a href="#" class="scard-download-it">
+                  <div class="scard-download-img-w"><img src="img/doc.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Скачать договор аренды</span><span class="scard-download-txt-2">pdf, 2.3 Mb</span></div>
+                </a>
+                <a href="#" class="scard-download-it">
+                  <div class="scard-download-img-w"><img src="img/doc.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Скачать бланк заявку</span><span class="scard-download-txt-2">pdf, 0.9 Mb</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="tabs_content_item">
+              <div class="scard-download-w">
+                <a href="#" class="scard-arts-it">
+                  <div class="scard-arts-img-w"><img src="img/article.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Береговые краны</span></div>
+                </a>
+                <a href="#" class="scard-arts-it">
+                  <div class="scard-arts-img-w"><img src="img/article.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Козловые краны</span></div>
+                </a>
+                <a href="#" class="scard-arts-it">
+                  <div class="scard-arts-img-w"><img src="img/article.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Классификация кранов на железнодорожном ходу</span></div>
+                </a>
+                <a href="#" class="scard-arts-it">
+                  <div class="scard-arts-img-w"><img src="img/article.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Основные виды спецтехники</span></div>
+                </a>
+                <a href="#" class="scard-arts-it">
+                  <div class="scard-arts-img-w"><img src="img/article.svg" /></div>
+                  <div class="scard-download-txts"><span class="scard-download-txt-1">Необходимость правильного выбора автокрана</span></div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+
+
+        <div class="prod-items-slider-block">
+          <div class="h2-wrap-center">
+            <h2 class="h2">               
+              <span class="h2-span">Другая техника</span> в разделе
+            </h2>
+          </div>
+
+          <div class="prod-items-slider">
+            <div class="prod-item">
+              <div class="prod-item-grow">
+                <a href="" class="prod-item-img-w"><img src="img/prod-1.jpg" class="prod-item-img"></a><a href="" class="prod-item-tit">Автокран 25 тонн Liebherr LTM 1025</a>
+                <div class="table">
+                  <div class="tr">
+                    <div class="td">Макс. грузоподъемность</div>
+                    <div class="td">25 т.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Длина стрелы</div>
+                    <div class="td">27 м.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Цена</div>
+                    <div class="td">15 000 руб./смена</div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="btn-w100 btn">Арендовать</a>
+            </div>
+
+            <div class="prod-item">
+              <div class="prod-item-grow">
+                <a href="" class="prod-item-img-w"><img src="img/prod-2.jpg" class="prod-item-img"></a><a href="" class="prod-item-tit">Автокран 25 тонн Liebherr LTM 1025</a>
+                <div class="table">
+                  <div class="tr">
+                    <div class="td">Макс. грузоподъемность</div>
+                    <div class="td">25 т.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Длина стрелы</div>
+                    <div class="td">27 м.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Цена</div>
+                    <div class="td">15 000 руб./смена</div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="btn-w100 btn">Арендовать</a>
+            </div>
+
+            <div class="prod-item">
+              <div class="prod-item-grow">
+                <a href="" class="prod-item-img-w"><img src="img/prod-3.jpg" class="prod-item-img"></a><a href="" class="prod-item-tit">Автокран 25 тонн Liebherr LTM 1025</a>
+                <div class="table">
+                  <div class="tr">
+                    <div class="td">Макс. грузоподъемность</div>
+                    <div class="td">25 т.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Длина стрелы</div>
+                    <div class="td">27 м.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Цена</div>
+                    <div class="td">15 000 руб./смена</div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="btn-w100 btn">Арендовать</a>
+            </div>
+
+            <div class="prod-item">
+              <div class="prod-item-grow">
+                <a href="" class="prod-item-img-w"><img src="img/prod-4.jpg" class="prod-item-img"></a><a href="" class="prod-item-tit">Автокран 25 тонн Liebherr LTM 1025</a>
+                <div class="table">
+                  <div class="tr">
+                    <div class="td">Макс. грузоподъемность</div>
+                    <div class="td">25 т.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Длина стрелы</div>
+                    <div class="td">27 м.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Цена</div>
+                    <div class="td">15 000 руб./смена</div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="btn-w100 btn">Арендовать</a>
+            </div>
+
+            <div class="prod-item">
+              <div class="prod-item-grow">
+                <a href="" class="prod-item-img-w"><img src="img/prod-5.jpg" class="prod-item-img"></a><a href="" class="prod-item-tit">Автокран 25 тонн Liebherr LTM 1025</a>
+                <div class="table">
+                  <div class="tr">
+                    <div class="td">Макс. грузоподъемность</div>
+                    <div class="td">25 т.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Длина стрелы</div>
+                    <div class="td">27 м.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Цена</div>
+                    <div class="td">15 000 руб./смена</div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="btn-w100 btn">Арендовать</a>
+            </div>
+
+            <div class="prod-item">
+              <div class="prod-item-grow">
+                <a href="" class="prod-item-img-w"><img src="img/prod-6.jpg" class="prod-item-img"></a><a href="" class="prod-item-tit">Автокран 25 тонн Liebherr LTM 1025</a>
+                <div class="table">
+                  <div class="tr">
+                    <div class="td">Макс. грузоподъемность</div>
+                    <div class="td">25 т.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Длина стрелы</div>
+                    <div class="td">27 м.</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td">Цена</div>
+                    <div class="td">15 000 руб./смена</div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="btn-w100 btn">Арендовать</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!--contain-->
+    </div><!--cart-page-->  
+
+
+    <div class="footer1">
+  <div class="contain">
+    <div class="footer1-w">
+      <div class="footer1-col-1">
+        <a href="index.html" class="logo-2"><img src="img/logo-2.svg" /></a>
+        <div class="footer1-socs">
+          <a href="" class="footer1-soc"><img src="img/inst-2.svg" /></a><a href="" class="footer1-soc"><img src="img/you-2.svg" /></a><a href="" class="footer1-soc"><img src="img/wa-2.svg" /></a>
+        </div>
+      </div>
+      <div class="footer1-col-2">
+        <div class="footer1-tit">Компания</div>
+
+        <div class="hide-480">
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Спецтехника</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Цены</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Наши работы</a></li>
+          </ul>
+
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Услуги</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Статьи</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Новости</a></li>
+          </ul>
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Отзывы</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">О компании</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="show-480">
+
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Спецтехника</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Цены</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Наши работы</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Услуги</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Статьи</a></li>
+          </ul>
+
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Новости</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Отзывы</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">О компании</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Контакты</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="footer1-col-3">
+        <div class="footer1-tit">Каталог</div>
+        <div class="hide-768 show-480">
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Автокраны</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Гусеничные краны</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Тралы</a></li>
+          </ul>
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Экскаваторы</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Самосвалы</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Манипуляторы</a></li>
+          </ul>
+        </div>
+        <div class="show-768 hide-480">
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Автокраны</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Гусеничные краны</a></li>              
+          </ul>
+          <ul class="footer1-ul">
+            <li class="footer1-li"><a href="" class="footer1-a">Тралы</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Экскаваторы</a></li>
+          </ul>
+          <ul class="footer1-ul">              
+            <li class="footer1-li"><a href="" class="footer1-a">Самосвалы</a></li>
+            <li class="footer1-li"><a href="" class="footer1-a">Манипуляторы</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="foot-2">
+  <div class="contain">
+    <div class="foot2-w">
+      <div class="foot-2-conts-b-col">
+        <div class="foot-2-conts-b foot-2-conts-b-1">
+          <img src="img/phone.svg" />
+          <div class="foot-2-conts-txts">
+            <div class="foot-2-conts-txt-1">Телефон (круглосуточно)</div>
+            <a href="" class="foot-2-conts-txt-2">+ 7 (495) 505-20-29</a>
+          </div>
+        </div>
+        <div class="foot-2-conts-b">
+          <img src="img/mail.svg" />
+          <div class="foot-2-conts-txts">
+            <div class="foot-2-conts-txt-1">E-mail</div>
+            <a href="" class="foot-2-conts-txt-2">info@groskran.ru </a>
+          </div>
+        </div>
+        <div class="foot-2-conts-b-2">
+          <img src="img/home.svg" />
+          <div class="foot-2-conts-txts">
+            <div class="foot-2-conts-txt-1">Адрес</div>
+            <div class="foot-2-conts-txt-2">
+              109382 г. Москва, Егорьевский пр-д, д. 8 стр.9
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="" class="foot-btn top-btn btn"><img src="img/callback.svg" class="top-btn-icpn" /><span class="top-btn-span">Обратный звонок</span></a>
+    </div>
+  </div>
+</div><!--foot-2-->
+
+</div><!--wrapper-->
+
+<div id="button-up">
+  <span></span>
+</div>
+
+
+<div class="modal-overlay modal-overlay_1">  
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block">     
+    <div class="ordform-w">
+      <div class="ordform">
+        <div class="h2-left">Заказать аренду</div>
+        <div class="ordform-info">
+          <img src="img/phone-ord.svg" class="ordform-img" />
+          <div class="ordform-txt">Если вам нужна срочная консультация, то наберите номер <a class="ordform-link-1">+ 7 (495) 505-20-29</a></div>
+        </div>
+        <form class="ordform-form">
+          <label class="ordform-label">
+            <span class="ordform-label-span">Имя<span class="ordform-label-txt">*</span></span><input type="text" class="ordform-input" placeholder=" " required/>
+          </label>
+          <label class="ordform-label">
+            <span class="ordform-label-span off">Техника <span class="ordform-label-txt">*</span></span><input type="text" class="ordform-input" value="Аренда автокрана 400 тонн Liebherr LTM 1400" placeholder="" required/>
+          </label>
+          <label class="ordform-label">
+            <span class="ordform-label-span">Телефон <span class="ordform-label-txt">*</span></span><input type="text" class="ordform-input" placeholder=" " required/>
+          </label>
+          <label class="ordform-label"><span class="ordform-label-span">E-mail</span><input type="text" class="ordform-input" placeholder=" " />
+          </label>
+          <label class="ordform-label"><span class="ordform-label-span">Ваши комментарии</span><input type="text" class="ordform-input" placeholder=" " />
+          </label>
+          <button class="ordform-btn btn">Отправить заявку</button>
+        </form>
+        <div class="ordform-time">Время обработки заявки ~30 минут</div>
+        <a href="#" class="ordform-close pop-close"></a>
+      </div>
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
+  <script src="js/placemark.js" type="text/javascript"></script>
+
+  <script src="js/common.js"></script>
+
+
+
+
+
+
+  </body>
+
+  </html>

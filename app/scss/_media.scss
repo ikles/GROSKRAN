@@ -333,7 +333,7 @@
     display: none;
   }
   .about {
-    margin-top: 70px;
+    margin-top: -20px;
   }
   .about-w {  
     flex-wrap: wrap;
@@ -437,6 +437,9 @@
     &:hover {
 
     }
+  }
+  .servs {
+    margin-top: 80px;
   }
 } 
 
@@ -781,7 +784,7 @@
     overflow: hidden;
   }
   .rews {
-    margin-top: -57px;
+    margin-top: 80px;
   }
   .rews-slider-w {
     margin-top: -10px;
@@ -810,7 +813,7 @@
     margin-bottom: 0;
   }
   .profit {
-    margin-top: 87px;    
+    margin-top: 67px;    
   }
   .profit-w {
     margin-top: -8px;
@@ -823,7 +826,7 @@
     max-width: 100%;
   }
   .discounts {
-    margin-top: 22px;
+    margin-top: 12px;
   }
   .discounts-slider-w {
     margin-top: -10px;
@@ -835,7 +838,7 @@
     bottom: -44px;
   }
   .about {
-    margin-top: 64px;
+    margin-top: -50px;
   }
   .about-l {
     height: 521px;
@@ -1079,12 +1082,21 @@
 
 
 
-@media only screen and (max-width : 570px) {
+@media only screen and (max-width : 570px) {  
   .contain {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
+
+
+.ordform {
+    padding: 30px; 
+ }
+ .ordform-info {
+   padding: 20px;
+ }
+
   .products-form-tit {
     position: relative;
     .products-form-tit-more {
@@ -1558,7 +1570,7 @@
     }
   }
   .rews {
-    margin-top: -87px;
+    margin-top: 64px;
   }
   .rews-slider-min .rews-slide-inn {
     padding: 29px;
@@ -1671,7 +1683,7 @@
     bottom: -27px;
   }
   .about {
-    margin-top: 36px;
+    margin-top: -90px;
   }
   .about-r-inn {
     padding: 25px 50px 26px 30px;
@@ -1880,6 +1892,9 @@ h1:before {
 }
 .wrapper-works .footer1 {
   padding-top: 33px;
+}
+.servs {
+  margin-top: 30px;
 }
 }
 
