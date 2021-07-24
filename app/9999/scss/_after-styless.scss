@@ -1,3 +1,25 @@
+div.fancy-select {
+  width: 100%;
+}
+div.fancy-select div.trigger,
+div.fancy-select ul.options {
+  width: 100%;
+  min-width: auto;
+  border-radius: 0;
+}
+div.fancy-select div.trigger {
+  background: none;
+  padding: 12px 15px;
+}
+
+div.fancy-select div.trigger:after {
+  right: 15px;
+}
+
+div.fancy-select div.trigger {
+  color: #000;
+}
+
 .completed-slde-dots {
   position: absolute;
   left: 28px;
@@ -34,35 +56,6 @@
 
 .nobrd {
   border: none;
-}
-
-
-body {  
-    &.active {
-        background: url("../img/1920.jpg") no-repeat top 0px center;
-        .wrapper {
-            opacity: 0.4;
-        } 
-        .footer {
-            opacity: 0.4;
-        }
-        .get {
-            opacity: 0.4;
-        }
-    }    
-
-
-}
-.eye-3 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    background-color: #ccc;
-    z-index: 100;   
-    -webkit-border-radius: 50%; 
-    border-radius: 50%;
 }
 
 @media (max-width: 640px) {
