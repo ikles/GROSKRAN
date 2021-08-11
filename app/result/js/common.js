@@ -15,12 +15,37 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
+//const grid = $('.swork-grid-w');
+
+
+$('.swork-grid-w').masonry({
+  // options...
+  itemSelector: '.swork-it',
+  columnWidth: 0,  
+});
+
+
+  if ( $('*[data-fancybox="gallery-2"]').length ) {
+
+    $('[data-fancybox="gallery-2"]').fancybox({
+      arrows: true,
+      infobar: true,
+      smallBtn: false,
+      toolbar: true,
+      iframe : {
+        css : {
+          width : '950px'
+        }
+      },    
+      slideClass: "myClass",
+      baseClass: "myclass"
+    });
+  }
 
 
 
 
-
-  $('.wrapper').prepend('<span class="eye-3"></span>');
+/*  $('.wrapper').prepend('<span class="eye-3"></span>');
   let pg = parseInt(document.location.pathname.match(/\d+/))
   $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
@@ -31,7 +56,7 @@ jQuery(document).ready(function( $ ) {
     let pg = parseInt(document.location.pathname.match(/\d+/));
     $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
     $('body:not(.active)').css('background-image', "unset");
-  });
+  });*/
 
 $('.more-tbl').click(function (e) {
   e.preventDefault()
@@ -369,7 +394,7 @@ $('.more-tbl').click(function (e) {
     });
   }
 
-  $('.top-mnu-li._parent a').click(function (e) {
+  $('.top-mnu-li._parent > a').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('on');
     $(this).next().toggleClass('on');
