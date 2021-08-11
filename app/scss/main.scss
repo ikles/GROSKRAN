@@ -3657,6 +3657,7 @@ input[type="text"].hor-form-input-2 {
       }
       &:nth-child(1) {
         padding-left: 40px;
+        padding-right: 10px;
       }     
       &:nth-child(3) {
         padding-right: 40px;
@@ -3702,7 +3703,7 @@ input[type="text"].hor-form-input-2 {
           display: inline-flex;          
           align-items: center;
           position: relative;
-          display: inline;
+          display: inline;          
           img {
             display: inline;
             margin-left: 8px;
