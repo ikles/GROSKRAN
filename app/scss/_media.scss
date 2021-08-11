@@ -710,6 +710,9 @@
 .swork-page {
   padding-bottom: 46px;
 }
+.price-content table td:nth-child(1) {
+  min-width: 413px;
+}
 
 } 
 
@@ -1716,6 +1719,9 @@
 .wrapper-conts .footer1 {
   padding-top: 92px;
 }
+.price-content table td:nth-child(1) {
+  min-width: 352px;
+}
 }
 
 @media only screen and (max-width : 700px) {
@@ -1926,6 +1932,9 @@
   .wrapper-conts .footer1 {
     margin-top: 0;
     padding-top: 143px;
+  }
+  .price-content table td:nth-child(1) {
+    min-width: unset;
   }
 } 
 

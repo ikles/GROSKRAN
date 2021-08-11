@@ -698,7 +698,7 @@ input[type="text"].products-form-input {
 
 .prod-item-img-w {
   display: block;
-  height: 115px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -3658,6 +3658,7 @@ input[type="text"].hor-form-input-2 {
       &:nth-child(1) {
         padding-left: 40px;
         padding-right: 10px;
+        min-width: 458px;
       }     
       &:nth-child(3) {
         padding-right: 40px;
