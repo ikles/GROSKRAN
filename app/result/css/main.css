@@ -1195,7 +1195,7 @@ input[type="text"].products-form-input {
   transition: 0.5s; }
   .servs-item:hover {
     background: #E73237;
-    cursor: pointer; }
+    /*cursor: pointer;*/ }
     .servs-item:hover .servs-item-cat {
       background-color: #FFF;
       color: #E73237; }
