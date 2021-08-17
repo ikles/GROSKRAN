@@ -1824,11 +1824,11 @@ input[type="text"].products-form-input {
     transition: 0.5s;
   }
   &:hover {
-    background-color: $red;
+    /*background-color: $red;*/
     cursor: pointer;
     svg {
       path {
-        fill: #fff;
+        /*fill: #fff;*/
       }
     }
   }

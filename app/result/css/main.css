@@ -2121,10 +2121,10 @@ input[type="text"].products-form-input {
   .customers-slide svg {
     transition: 0.5s; }
   .customers-slide:hover {
-    background-color: #E73237;
+    /*background-color: $red;*/
     cursor: pointer; }
     .customers-slide:hover svg path {
-      fill: #fff; }
+      /*fill: #fff;*/ }
 
 .hight-weight {
   margin-top: 102px; }
