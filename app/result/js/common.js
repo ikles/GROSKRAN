@@ -25,6 +25,13 @@ $('.swork-grid-w').masonry({
 });
 
 
+$('.hight-weight-more').click(function (e) {
+  e.preventDefault();
+  $('.hight-weight-txts-w').addClass('on');
+  $(this).hide();
+})
+
+
   if ( $('*[data-fancybox="gallery-2"]').length ) {
 
     $('[data-fancybox="gallery-2"]').fancybox({

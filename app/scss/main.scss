@@ -1845,6 +1845,25 @@ input[type="text"].products-form-input {
   margin-right: auto;  
   margin-top: -2px;
 }
+.hight-weight-txts-w {  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  line-clamp: 6;
+  box-orient: vertical;
+margin-bottom: 19px;
+&.on {
+   overflow: visible;
+    text-overflow: unset;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    box-orient: unset;
+}
+}
 
 .hight-weight-p {
   font-size: 13px;
