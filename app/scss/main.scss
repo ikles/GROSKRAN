@@ -543,11 +543,19 @@ button {
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
+  form {
+    display: flex;
+    flex-direction: column;  
+    flex-grow: 1; 
+  }
 }
+
+
 
 .prod-col-right {
   width: 75%;
   display: flex;  
+  align-items: flex-start;
   flex-wrap: wrap;  
   justify-content: flex-start;
   .prod-item {
@@ -717,6 +725,7 @@ input[type="text"].products-form-input {
   color: rgb(0, 0, 0);
   display: block;
   margin-top: 22px;
+  min-height: 55px;
   &:hover {
     text-decoration: none;
   }
@@ -724,6 +733,7 @@ input[type="text"].products-form-input {
 
 .table {
   margin-top: 18px;  
+  min-height: 91px;
 }
 
 .tr {
@@ -1857,14 +1867,14 @@ input[type="text"].products-form-input {
   -webkit-box-orient: vertical;
   line-clamp: 6;
   box-orient: vertical;
-margin-bottom: 19px;
-&.on {
+  margin-bottom: 19px;
+  &.on {
    overflow: visible;
-    text-overflow: unset;
-    -webkit-line-clamp: unset;
-    line-clamp: unset;
-    box-orient: unset;
-}
+   text-overflow: unset;
+   -webkit-line-clamp: unset;
+   line-clamp: unset;
+   box-orient: unset;
+ }
 }
 
 .hight-weight-p {
@@ -4612,9 +4622,9 @@ table.dont-l {
   &._video {
     position: relative;
     display: flex;    
-            justify-content: center;    
-            align-items: center;
-            cursor: pointer;
+    justify-content: center;    
+    align-items: center;
+    cursor: pointer;
     &:before {
      content: "";
      display: block;
