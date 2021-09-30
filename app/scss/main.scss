@@ -462,7 +462,11 @@ button {
   }
 }
 
-
+.top-slide-gif {
+  &:after {    
+    background: rgba(45, 40, 40, 0.25);
+  }
+}
 
 .slide-img {
   object-fit: cover;
